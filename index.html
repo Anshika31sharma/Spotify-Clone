@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--  Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #000"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./Assets/spotify.png"
+            alt="Logo"
+            width="55"
+            height="60"
+            class="d-inline-block align-text-center"
+          />
+          Spotify <span class="logo-icon"> Favourites</span>
+        </a>
+
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+          <i
+             class="fa-solid fa-bell"
+            style="font-size: 25px; color: white; margin: 10px 20px 0px 20px"
+          ></i>
+          <div class="user-img">
+            <img
+              src="Assets/user.png"
+              alt=""
+            />
+          </div>
+        </form>
+      </div>
+    </nav>
+    <main>
+      <section class="section">
+        <div class="left-section">
+          <section class="section-1">
+            <div class="box" id="box-1">
+              <img src="./Assets/party.png" alt="" />
+            </div>
+            <div class="box" id="box-2">
+              <img src="./Assets/ig.png" alt="" />
+            </div>
+            <div class="box" id="box-3">
+              <img src="./Assets/hits.png" alt="" />
+            </div>
+          </section>
+          <h1 class="text-light">Based on your recent listening</h1>
+          <div class="latest-release">
+            <div class="col" id="col-1" >
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class=" icon col-md-4" style="width: 30%; height: 150px;">
+                    <img src="./Assets/Classical.png"  class="img-fluid rounded-start" style="width: 100%; height: 100%;">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <p class="h4 text-light">Classical Music</p>
+                      <p class="h5 text-light" class=" text-body-secondary"> </p>
+                      <span class="d-flex justify-content-end text-light">By Spotify</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" id="col-1">
+              <div class="col" id="col-1" >
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class=" icon col-md-4" style="width: 30%; height: 150px;">
+                      <img src="./Assets/best.png"   class="img-fluid rounded-start" style="width: 100%; height: 100%;" >
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="h4 text-light">Best of Bollywood</p>
+                        <p class="h5 text-light" class="text-body-secondary">Every track you like</p>
+                        <span class="d-flex justify-content-end text-light" >Time to get loud</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" id="col-1">
+              <div class="col" id="col-1" >
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class=" icon col-md-4" style="width: 30%; height: 150px;">
+                      <img src="./Assets/gita.png" class="img-fluid rounded-start" style="width: 100%; height: 100%;" >
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="h4 text-light">Prasad's Gita zone</p>
+                        <p class="h5 text-light" class="text-body-secondary">Bhagwat Gita </p>
+                        <span class="d-flex justify-content-end text-light" >Prasad Samantrary </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" id="col-1">
+              <div class="col" id="col-1" >
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class=" icon col-md-4" style="width: 30%; height: 150px;">
+                      <img src="./Assets/indie.png"   class="img-fluid rounded-start" style="width: 100%; height: 100%;">
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="h4 text-light">India Playlist</p>
+                        <p class="h5 text-light" class="text-body-secondary text-light">All that's viral </p>
+                        <span class="d-flex justify-content-end text-light" >Stream now</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" id="col-1">
+              <div class="col" id="col-1" >
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class=" icon col-md-4" style="width: 30%; height: 150px;" >
+                      <img src="./Assets/upanishad.png"   class="img-fluid rounded-start" style="width: 100%; height: 100%;" >
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="h4 text-light">Upnishads</p>
+                        <p class="h5 text-light" class="text-body-secondary">REDFM </p>
+                        <span class="d-flex justify-content-end text-light" >Podcast</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col" id="col-1">
+              <div class="col" id="col-1" >
+                <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class=" icon col-md-4" style="width: 30%; height: 150px;">
+                      <img src="./Assets/100.png"  class="img-fluid rounded-start" style="width: 100%; height: 100%;" >
+                      <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <p class="h4 text-light">Top 100</p>
+                        <p class="h5 text-light" class="text-body-secondary">Aug 11,2017 </small></p>
+                        <span class="d-flex justify-content-end text-light" >Trending Music</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="h1 text-light">Popular Artists</h1>
+          <div class="popular-artists">
+            <div class="artists">
+              <img src="./Assets/ed.jpg" alt="">  
+              <p class="h5 text-light">Ed Sheran</p> 
+            </div>
+             
+            <div class="artists">
+              <img src="./Assets/Taylor.png" alt="">
+              <p class="h5 text-light">Taylor Swift</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/shakira.jpeg" alt="">
+              <p class="h5 text-light">Shakira</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/justin.png" alt="">
+              <p class="h5 text-light">Justin Bicher</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/selena.png" alt="">
+              <p class="h5 text-light">Selena Comez</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/aaliya.png" alt="">
+              <p class="h5 text-light">Aaliya</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/anuv.webp" alt="">
+              <p class="h5 text-light">Anuv Jain</p>
+              
+            </div>
+            <div class="artists">
+              <img src="./Assets/Arijit.png" alt="">
+              <p class="h5 text-light">Arijit Singh</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/Arman.png" alt="">
+              <p class="h5 text-light">Armaan</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/Bille Elish" alt="">
+              <p class="h5 text-light">Billie Elish</p>
+            </div>
+            <div class="artists">
+              <img src="./Assets/Bprak.png" alt="">
+              <p class="h5 text-light">B Praak</p>
+            </div>
+          </div>
+          <div class="popular-artists-1">
+            <div class="artists-1">
+              <img src="./Assets/Darshan.png" alt="">  
+              <p class="h5 text-light">Ed Sheran</p> 
+            </div>
+             
+            <div class="artists-1">
+              <img src="./Assets/dhanush.png" alt="">
+              <p class="h5 text-light">Taylor Swift</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/Dhwani.png" alt="">
+              <p class="h5 text-light">Shakira</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/diljit.png" alt="">
+              <p class="h5 text-light">Justin Bicher</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/Guru.png" alt="">
+              <p class="h5 text-light">Selena Comez</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/Jass.png" alt="">
+              <p class="h5 text-light">Martin</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/Jointa.png" alt="">
+              <p class="h5 text-light">Ed Sheran</p>
+              
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/jubin.png" alt="">
+              <p class="h5 text-light">Taylor Swift</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/kishor.webp" alt="">
+              <p class="h5 text-light">Shakira</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/kk.png" alt="">
+              <p class="h5 text-light">Justine Bicher</p>
+            </div>
+            <div class="artists-1">
+              <img src="./Assets/lata.png" alt="">
+              <p class="h5 text-light">Selena Gomez</p>
+            </div>
+          </div>
+          <h1 class="heading-1" style="color: white;">More of what you like</h1>
+          <div class="latest-english">
+            <div class="latest-english-1">
+              <img src="./Assets/Punjabi.jpeg" alt="">
+               <h5 class="h5 text-light"><h5>
+               <p class="text-light">Hot hits Punjabi</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/heartbreak.jpeg" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">Broken Heart</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/hindi.jpeg" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">Latest bollywood</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/promote.png" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">All tracks</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/live.png" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">Concert music</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/main.jpg" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">Hollywood track</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/new.jpg" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">New trends</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/365.jpeg" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">365 days album</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/new.png" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">Latest</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/op.jpg" alt="">
+              <h5 class="h5 text-light"></h5>
+              <p class="text-light">Top Trending</p>
+            </div>
+          </div>
+          <h1 class="text-light">Viralgram</h1>
+          <div class="latest-english">
+            <div class="latest-english-1">
+              <img src="./Assets/spo.jpg" alt="">
+               <h5 class="text-light"></h5>
+               <p class="heading-1">Spotify music</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/unheared.jpeg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">Unheared Music</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/valentine.jpeg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">Romantic tracks</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/newmusic.jpg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">New music</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/mc square" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">MC Square album</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/ultimate.jpeg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">Ultimate nonstop</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/hip hop.jpeg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">Trends</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/year.jpeg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">New year songs</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/hop.jpeg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">Hip-hop music</p>
+            </div>
+            <div class="latest-english-1">
+              <img src="./Assets/top.jpg" alt="">
+              <h5 class="heading-1"></h5>
+              <p class="heading-1">Top trends music track</p>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+
+
+        <div class="right-section">
+          <div class="div-1">
+            <div id="Queue" class="h3 heading-1">Queue</div>
+            <div class="dropdown">
+              <button id="dropdown" class=" btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Queue
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="div-2">
+              <div class="sub-div">
+                <p class="h6">01</p>
+                <div>
+                  <img src="./Assets/sachet.webp" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Sachet Tandon</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">02</p>
+                <div>
+                  <img src="./Assets/Sidhu.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Justin<br>Sidhu Mossewala</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">03</p>
+                <div>
+                  <img src="./Assets/shreya.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Shreya Ghoshal</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">04</p>
+                <div>
+                  <img src="./Assets/mika.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Mika Singh</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">05</p>
+                <div>
+                  <img src="./Assets/mithoon.webp" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Mithoon</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">06</p>
+                <div>
+                  <img src="./Assets/Neha.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Neha Kakkar</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">07</p>
+                <div>
+                  <img src="./Assets/shaan.webp" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Shaan</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">08</p>
+                <div>
+                  <img src="./Assets/shankar.webp" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Shankar Mahadevan</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">09</p>
+                <div>
+                  <img src="./Assets/shirley.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Shirley Shetia</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">10</p>
+                <div>
+                  <img src="./Assets/tanishq.webp" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Tanishq Bagchi</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">11</p>
+                <div>
+                  <img src="./Assets/Darshan.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Darshan Raval</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">12</p>
+                <div>
+                  <img src="./Assets/Dhwani.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Dhwani Bhanushali</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="sub-div">
+                <p class="h6">13</p>
+                <div>
+                  <img src="./Assets/Taylor.png" alt="">
+                </div>
+                <div>
+                  <h5 class="title">Taylor Swift</h5>
+                </div>
+                <div class="heart">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
